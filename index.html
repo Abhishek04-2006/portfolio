@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar Tiwari - Portfolio</title>
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav class="nav">
+            <h1 class="nav__title">Abhishek Kumar Tiwari</h1>
+            <button id="theme-toggle" class="nav__theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            <div class="nav__links">
+                <a href="#about" class="nav__link">About</a>
+                <a href="#projects" class="nav__link">Projects</a>
+                <a href="#skills" class="nav__link">Skills</a>
+                <a href="#contact" class="nav__link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <img src="me.jpg" alt="Profile Photo" width="200" height="200">
+        <p>Hi! I'm a passionate developer with expertise in building web applications. I love creating beautiful, functional websites and solving complex problems through code. With a background in both frontend and backend development, I enjoy working on web dev projects.</p>
+        <p>In my free time, I contribute to open-source projects and stay updated with the latest web technologies.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects">
+            <article class="project-card">
+                <h3>SPARKSCULPT</h3>
+                <p>A full-stack web application built with React and Node.js featuring IMAGINATION and INNOVATION.</p>
+                <a href="#">View Project →</a>
+            </article>
+            <article class="project-card">
+                <h3>VICHAAR</h3>
+                <p>A full-stack web application built with React and Node.js featuring FREEDOM OF SPEECH.</p>
+                <a href="#">View Project →</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Responsive Design</span>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/800x500?text=Gallery+1" alt="Gallery image 1" data-index="0" data-caption="Gallery image 1">
+            <img src="https://via.placeholder.com/800x500?text=Gallery+2" alt="Gallery image 2" data-index="1" data-caption="Gallery image 2">
+            <img src="https://via.placeholder.com/800x500?text=Gallery+3" alt="Gallery image 3" data-index="2" data-caption="Gallery image 3">
+            <img src="https://via.placeholder.com/800x500?text=Gallery+4" alt="Gallery image 4" data-index="3" data-caption="Gallery image 4">
+        </div>
+    </section>
+
+    <!-- Lightbox / Modal for gallery -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lightbox-content" role="dialog" aria-modal="true">
+        <button class="lb-close" aria-label="Close">×</button>
+        <button class="lb-prev" aria-label="Previous">‹</button>
+        <img src="" alt="" id="lb-img">
+        <button class="lb-next" aria-label="Next">›</button>
+        <div class="lb-caption" id="lb-caption"></div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-info">
+            <p>I'm always open to new opportunities and interesting projects!</p>
+            <p class="margin-top-lg">
+                <a href="#" id="open-contact">Email Me</a>
+                <a href="https://www.linkedin.com/in/abhishek-kumar-tiwari-b12a75312" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/Abhishek04-2006" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+        </div>
+
+        <form id="contact-form" class="contact-form margin-top-lg" aria-label="Contact form">
+            <div class="form__group">
+                <label for="cf-name" class="form__label">Name</label>
+                <input id="cf-name" name="name" type="text" required class="form__input">
+            </div>
+            <div class="form__group">
+                <label for="cf-email" class="form__label">Email</label>
+                <input id="cf-email" name="email" type="email" required class="form__input">
+            </div>
+            <div class="form__group">
+                <label for="cf-message" class="form__label">Message</label>
+                <textarea id="cf-message" name="message" rows="4" required class="form__input"></textarea>
+            </div>
+            <button type="submit" id="cf-submit" class="btn btn--primary margin-top-md">Send Message</button>
+            <p id="cf-status" role="status" class="margin-top-md"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Abhishek Kumar Tiwari. All rights reserved.</p>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/theme-switcher.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
